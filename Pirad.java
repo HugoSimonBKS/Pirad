@@ -50,7 +50,7 @@ public class Pirad extends JFrame implements ActionListener {
           tempsrestant -= minutes;
           int tempsfinal = minutesd - tempsrestant;
           System.out.println("heure : " + tempsrestant + "minutes : " + minutes +  "minutes d (je sais plus ca fait quoi) : " + minutesd);
-          double angle = ((double)tempsfinal/(double)minutesd)*Math.PI;
+          double angle = ((double)tempsfinal*2/(double)minutesd)*Math.PI;
           int engleu = 360 - (int)Math.toDegrees(angle);
           for(int i = 0; i < engleu; i++){
             this.panne.dessineLine(getGraphics(), i);
