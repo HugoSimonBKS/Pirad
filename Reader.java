@@ -1,6 +1,19 @@
 import java.util.regex.*;
-public final class Reader{
 
+/**
+ * 	Classe qui permet de lire des entrees texte de JFrame et tester si il s'agit de dates etc
+ * 	@author Hugo Simon
+ *	@version 1.1
+ */
+
+public final class Reader{
+	
+	/**
+	 * 	methode qui divise une chaine selon le pattern fourni
+	 * @param text	chaine a lire
+	 * @param charsplit	charactere determinant comment split
+	 * @return	le tableau de String
+	 */
   public static String[] read(String text, String charsplit){
       String[] valeurs = text.split(charsplit);
       return valeurs;
